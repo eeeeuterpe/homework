@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 间接选中 */
+			/* ul{
+				color: red;
+			}
+			
+			li{
+				color: blue;
+			} */
+			
+			/* 直接选中 */
+			/*如果是同类型的选择器时，谁写在后面就听谁的  */
+			/* .pp{
+				color:blue;
+			}
+			.p1{
+				color:red;
+			} */
+			
+			/*id>类>标签>通配符>继承>浏览器默认  */
+			#aa{
+				color:purple;
+			}
+			.p1{
+				color:red;
+			}
+			p{
+				color:blue;
+			}
+			*{
+				color:green;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!-- 
+		 优先级判断的方式：
+		 1. 直接选中优先级>间接选中优先级
+		 2. 间接选中就是继承时，谁离目标标签近就听谁的。
+		 3. 间接选中，谁离目标标签近就听谁的
+		 4. 都是直接选中时
+			4.1 如果是同类型的选择器时，谁写在后面就听谁的。
+			4.2 如果是不同类型的选择器时，按照优先级：
+		 		 id>类>标签>通配符>继承>浏览器默认
+			4.3 内联样式>id选择器
+		 -->
+		 <ul>
+		 	<li>
+		 		<p id="aa" class="p1 pp" style="color: red;">我是段落</p>
+		 	</li>
+		 </ul>		 
+		
+	</body>
+</html>

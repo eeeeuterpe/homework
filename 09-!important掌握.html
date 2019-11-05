@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#aa{
+				color:purple;
+			}
+			.p1{
+				color:red;
+			}
+			p{
+				color:blue !important; 
+				/* color:blue !important; */
+			}
+			*{
+				color:green;
+			}
+			
+			li{
+				color: skyblue;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+		 !important用于提高某个直接选中标签的优先级，要写在属性值分号的前面
+		 !important不能用于间接选中的标签
+		 -->
+		 <ul>
+		 	<li>
+		 		<p id="aa" class="p1" style="color: red;">我是段落</p>
+		 	</li>
+		 </ul>	
+	</body>
+</html>

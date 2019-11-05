@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			span{
+				width: 100px;
+				height: 100px;
+				border: 1px solid black;
+				display: inline-block;
+				background: red;
+			}
+			.box1{				
+				margin-top: 10px;
+				margin-left: 10px;
+				margin-right: 30px;
+				margin-bottom: 10px;
+			}
+			div{
+				width: 100px;
+				height: 100px;
+				border: 1px solid red;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 
+			1.什么是外边距?
+			标签和标签之间的距离就是外边距
+			
+			2格式
+			2.1非连写
+				margin-top:10px ;
+				margin-right:10px ;
+				margin-bottom:10px ;
+				margin-left:10px ;
+			
+			2-2连写
+			margin: 上 右 下 左;
+			
+			3.属性的取值省略时的规律
+			3-1 上 右 下 > 左边的取值和右边的一样
+			3-2 上 右 > 左边的取值和右边的一样 下边的取值和上边一样
+			3.3 上 > 右下左边取值和上边一样
+			
+			注意点:
+			外边距的那一部分是没有背景颜色的
+		 
+		 -->
+		<span class="box1">我是span</span><span class="box2">我是span</span>
+		<div></div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				color: yellow;
+				font-size: 30px;
+				text-decoration: none;
+				background: red;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<!-- 
+			继承性：
+			给父元素设置一些样式，子元素也可以使用
+			注意点:
+			1、并不是所有的属性都可以继承，
+			以color/font-/text-/line-开头的属性都可以继承
+			2、不仅只有儿子可以继承，所有后代都可以继承
+			3、a标签的文字颜色与下划线是不可以继承的
+			4、h标签的文字大小是不可以继承的
+			
+			应用：
+			一般用于设置网页的一些共性信息 ，例如：网页的文字颜色，字体、字体大小等内容
+			body{
+				font-size:12px;
+			}
+			
+		 -->
+		<div>
+			<p>我是段落</p>
+		</div>
+
+		<div>
+			<ul>
+				<li>
+					<p>我是段落2</p>
+				</li>
+			</ul>
+		</div>
+
+		<div>
+			<a href="#">我是超链接</a>
+		</div>
+		
+		<div>
+			<h1>我是大标题</h1>
+		</div>
+	</body>
+</html>

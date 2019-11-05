@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box1{
+				width: 100px;
+				height: 100px;
+				background: red;
+
+				border: 5px solid blue;			
+				
+			}
+			.box2{
+				padding: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 
+			1.什么是内边距?
+			边框和内容之间的距离就是内边距
+			
+			2.格式
+			2-1非连写
+			padding-top:5px ;
+			padding-right:20px ;
+			padding-bottom:10px ;
+			padding-left:30px ;
+			
+			2-2连写
+			padding: 上 右 下 左;
+			
+			3.属性的取值省略时的规律
+			3-1 上 右 下 > 左边的取值和右边的一样
+			3-2 上 右 > 左边的取值和右边的一样 下边的取值和上边一样
+			3.3 上 > 右下左边取值和上边一样
+			
+			注意点:
+			1.给标签设置内边距之后, 标签占有的宽度和高度会发生变化
+			2.给标签设置内边距之后, 内边距也会有背景颜色
+		 -->
+		<div class="box1"></div>
+		<br />
+		<div class="box1 box2"></div>
+		
+	</body>
+</html>

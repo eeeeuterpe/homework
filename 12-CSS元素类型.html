@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				width: 100px;
+				height:100px;
+				background: red;
+			}
+			div{
+				background: yellowgreen;
+			}
+			
+			span{
+				background: blue;
+				color: white;				
+			}
+			
+			img{
+				width: 100px;
+				height: 100px;				
+			}
+		</style>
+	</head>
+	
+	
+	<body>
+		
+		<!--
+			在HTML当中将标签分为两类：容器级标签、本文级标签
+			在CSS当中将标签分为三类：块级元素、行内元素、行内块级元素
+			1、什么是块级元素?什么是行内元素?
+			块级元素会独占一行
+			行内元素不会独占一行
+			
+			容器级的标签:
+			div h ul ol dl li dt dd...			
+			
+			本文级的标签:
+			span p del strong em ins...
+			
+			
+			块级元素(容器级的标签+p)：
+			p div h ul ol dl li dt dd...
+			
+			行内元素(本文级的标签，除了p)：
+			span del strong em ins...
+			
+			行内块级元素
+			img input ...
+			
+			
+			2块级元素与行内元素的区别
+			2-1块级元素
+				会独占一行
+				如果没有设置宽度，默认宽度会与父元素一样宽
+				可以设置宽高，设置宽高后，则依照宽高的设置显示
+				
+			2-2行内元素
+				不会独占一行
+				宽度默认与内容宽度一样宽
+				不能设置宽度、高度
+				上下margin固定为0
+				无法使用margin:0 auto;设置至中
+				
+			2-3行内块级元素
+				不会独占一行
+				可以设置宽高
+				无法使用margin:0 auto;设置至中			
+		-->
+		
+		<!--块级元素  -->
+		<div>我是div</div>
+		<p>我是段落</p>
+		<h3>我是标题</h3>
+		<hr>
+		<!--行内元素-->
+		<span>2019-</span>
+		<span>10-</span>
+		<span>30</span>
+		<strong>今天要交作业</strong>
+		<hr>
+		<!-- 行内块级元素 -->
+		<img src="img/Snip20170413_59.png" alt="">
+		<img src="img/Snip20170413_59.png" alt="">
+		
+	</body>
+	
+</html>
