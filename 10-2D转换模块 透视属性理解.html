@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 356px;
+				height: 542px;
+				border: 2px solid gray;
+				margin: 0 auto;
+				margin-top: 50px;
+				
+				perspective: 600px;
+			}
+			div img{
+				transform-origin:center bottom;
+				/* transform: rotateX(60deg); */
+				
+				/* transform-origin: left center;
+				transform: rotateY(60deg); */
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+			perspective 属性定义 3D 元素距视图的距离，以像素计
+			 perspective: 500px;（透视属性）
+			 进行X或Y轴旋转时加上的属性。
+			 什么是透视效果：近大远小
+			 注意：一定要注意, 透视属性必须添加到需要呈现透视效果的元素的父元素上面
+		 -->
+		 
+		 <div><img src="img/老K.PNG" alt=""></div>
+	</body>
+</html>

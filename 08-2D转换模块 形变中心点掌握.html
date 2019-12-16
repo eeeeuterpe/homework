@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				width: 200px;
+				height: 200px;
+				border: 1px solid grey;
+				list-style: none;
+				margin: 0 auto;
+				margin-top: 50px;
+				
+				position: relative;
+			}
+			ul li{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top:0;
+				left: 0;
+				
+				/*形变中心点 */
+				transform-origin: 0px 0px;
+				/* transform-origin: 200px 200px; */
+				/* transform-origin: 50% 50%; */
+				/* transform-origin: left bottom; */
+			}
+			
+			ul li:nth-child(1){
+				background: #f00;
+				transform: rotate(30deg);
+			}
+			ul li:nth-child(2){
+				background: #0f0;
+				transform: rotate(50deg);
+			}
+			ul li:nth-child(3){
+				background: #00f;
+				transform: rotate(70deg);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+		 形变中心点
+		 默认情况下所有的元素都是以自己的中心点作为参考来旋转的, 我们可以通过形变中心点属性来修改它的参考点
+		 格式：
+		 transform-origin: left top;（第一个参数:水平方向，第二个参数:垂直方向）
+		 注意：
+		 取值有三种形式：
+		 具体像素
+		 百分比
+		 特殊关键词(left/center/right)(top/center/bottom)		 
+		 -->
+		 <ul>
+		 	<li></li>
+		 	<li></li>
+		 	<li></li>
+		 </ul>
+	</body>
+</html>
